@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css"/>
+<!-- <script src="login.js"></script> -->
+</head>
+<body id="bodyid">
+<div class="container"><br>
+<div class="main">
+    <br><br>
+<h2>Login</h2>
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<b class="valid">User Name : arun1999<br/>Password : @1999</b></span><br>
+<span><b class="note">Note : </b>For Registeration <br/>
+<br><br><center><a id="reglink" href="register.html">Register Here</a>
+</div>
+</div>
+<script>
+    var attempt = 5; 
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "arun1999" && password == "@1999"){
+alert ("Login successfully");
+window.location = "home.html";
+return false;
+}
+else{
+attempt --;
+alert("You have left "+attempt+" attempt"+"\n"+"username or password is Incorrect ");
+if( attempt == 0){
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+#topnav{
+    height: 60px;
+    margin:0%;
+    background-color:#b59dc1 ;
+    text-decoration: none;
+}
+#curd{
+    height:300px;
+    width:100%;
+}
+
+#subnav{
+    
+    height: 40px;
+    font-size: 10px;
+    top: 0%;
+    position: sticky;
+    z-index: 10;
+}
+#subapl{
+    font-size: 12px;
+    font-weight: bold;
+}
+#topnavtext{
+    font-size:large;
+font-weight: bold;
+
+}
+#topnavtext.hover{
+background-color: blue;
+}
+#navtext{
+    color: blanchedalmond   ;
+font-size: medium;
+font-weight: bold;
+}
+
+#navtext.hover{
+    background-color: brown;
+}
+
+#Arr1{
+    margin-top: 18px;
+}
+#divbox{
+    height: 250px;
+    width: 150px;
+}
+#curcss{
+   object-fit: cover;
+   
+}
+.divmar{
+    margin: 50px;
+}
+#brandname{
+    
+        font-size: 40px;
+        background: -webkit-linear-gradient(rgb(7, 13, 18), rgb(212, 4, 4));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+#subbrand{
+    background: #ffb347;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffcc33, #ffb347);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffcc33, #ffb347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

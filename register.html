@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register page</title>
+    
+</head>
+<body id="one">
+    
+    <center><div id="brand"><h1></h1></div></center>
+    <center><div id="divinp"><div id=""><form id="dynamic"></div>
+        
+    </form></div></center>  
+
+    <script>
+         let dyn = document.getElementById("dynamic")
+    
+         
+        
+         let form=document.createElement("div")
+         form.setAttribute("id","divboxcss")
+         dyn.appendChild(form)
+
+
+         let bnd =document.createElement("h3");
+         bnd.setAttribute("id","brandtitle");
+         bnd.setAttribute("style","color:white")
+         bnd.innerHTML="Registration Form";
+         form.appendChild(bnd)
+    
+
+    //user name lable
+    let firstname=document.createElement("label");
+    firstname.innerHTML="First Name ";
+    firstname.setAttribute("id","cssus")
+    form.appendChild(firstname)
+    let inputfn=document.createElement("input");
+    inputfn.setAttribute("type","text");
+    form.appendChild(inputfn);
+
+    let lastname=document.createElement("label");
+    lastname.innerHTML="<br>"+"<br>"+"Last Name ";
+    lastname.setAttribute("id","cssus")
+    form.appendChild(lastname);
+    let inputln=document.createElement("input");
+    inputln.setAttribute("type","text");
+    form.appendChild(inputln);
+    //password lable
+    let lablegn=document.createElement("label");
+    lablegn.innerHTML="<br>"+"<br>"+"Gender  :-  ";
+    form.appendChild(lablegn);
+    //password input
+    let inputma=document.createElement("input");
+    inputma.setAttribute("type","checkbox");
+    form.appendChild(inputma);
+    let male=document.createElement("label");
+    male.innerHTML="Male";
+    form.appendChild(male);
+    
+    let inputfe=document.createElement("input");
+    inputfe.setAttribute("type","checkbox");
+    form.appendChild(inputfe);
+    let female=document.createElement("label");
+    female.innerHTML="Female";
+    form.appendChild(female);
+
+    let inputot=document.createElement("input");
+    inputot.setAttribute("type","checkbox");
+    form.appendChild(inputot);
+    let others=document.createElement("label");
+    others.innerHTML="Others";
+    form.appendChild(others);
+    
+    let labledob=document.createElement("label");
+    labledob.innerHTML="<br>"+"<br>"+"Date of Birth   ";
+    form.appendChild(labledob);
+    let dob=document.createElement("input");
+    dob.setAttribute("type","date");
+    form.appendChild(dob)
+        
+    
+    let lableun=document.createElement("label");
+    lableun.innerHTML="<br>"+"<br>"+" Address   ";
+    form.appendChild(lableun);
+    let nameun=document.createElement("textarea");
+    nameun.setAttribute("value","address");
+    form.appendChild(nameun);
+
+    var mybr = document.createElement('br');
+    form.appendChild(mybr);
+    var mybr = document.createElement('br');
+    form.appendChild(mybr);
+
+    let regbtn= document.createElement("input");
+    regbtn.setAttribute("id","registerbtn")
+    regbtn.setAttribute("value","Register");
+    regbtn.setAttribute("type","submit");
+    regbtn.setAttribute("style", "background-color:dodgerblue");
+    form.appendChild(regbtn);
+    
+    let restbtn = document.createElement("input");
+    restbtn.setAttribute("value", "reset");
+    restbtn.setAttribute("type", "reset");
+    restbtn.setAttribute("id","cssre");
+    restbtn.setAttribute("style", "background-color:lightgrey");
+    form.appendChild(restbtn);
+                                                
+ 
+
+    </script>
+        <style>
+            #one {
+                background-image:url("image/bg2.jpg");
+                background-repeat: no-repeat;
+                background-position:center ;
+                background-size: cover;
+
+            }
+            #cssre{
+                margin:7px;
+             }
+             #registerbtn{
+                margin: 7px;
+             }
+            
+             #divinp{
+                background-color: rgba(174, 155, 155, 0.251);  
+                padding: 70px;
+                
+                height: 320px;
+                width: 200px;
+                margin: 10px;
+                border-radius: 5%;
+                border: 1px solid rgb(26, 18, 18);
+
+             }
+             #dynamic{
+                position:absolute;
+                /* top: 0px; */
+                
+                /* padding-bottom: 50px; */
+             }
+                </style>
+</body>
+</html>
